@@ -16,4 +16,14 @@ class ExampleTest extends TestCase
 
         $response->assertStatus(200);
     }
+
+    /**
+     * AssertSee checks string or array withing resposne
+     */
+    public function test_about_page_returns_string_or_array()
+    {
+        $response = $this->get('/about');
+        $response->assertSee(['PHP', 'PHPUnit']);
+        // $response->assertSee('About');
+    }
 }
