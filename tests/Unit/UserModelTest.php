@@ -3,6 +3,7 @@
 namespace Tests\Unit;
 
 use App\Models\User;
+use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 // use PHPUnit\Framework\TestCase;
@@ -12,7 +13,9 @@ use Tests\TestCase;
 class UserModelTest extends TestCase
 {
 
-    use RefreshDatabase;
+    // use DatabaseMigrations;
+     use RefreshDatabase;
+
     /**
      * A basic unit test example.
      */
