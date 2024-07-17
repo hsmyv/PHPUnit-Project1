@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BeverageController;
 use App\Models\User;
 use Illuminate\Support\Facades\Route;
 
@@ -15,3 +16,6 @@ Route::get('/about', function(){
     // $string = 'About';
     // return $string;
 });
+
+
+Route::resource('beverage', BeverageController::class);
